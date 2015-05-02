@@ -14,3 +14,4 @@ Call the module function passing in the window object:
 ```javascript
 require('nwjs-osx-menu')(window);
 ```
+On Mac OS X, this call should add an Edit and a Window menu to the application menubar. On other platforms, this call should not modify the application state.

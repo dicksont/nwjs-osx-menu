@@ -1,6 +1,6 @@
 {
   "name": "nwjs-osx-menu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Creates default menu for nw.js on Mac OS X, thereby enabling functionality like Copy-and-Paste",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,10 @@
     "copy",
     "paste",
     "clipboard",
-    "cut"
+    "cut",
+    "node",
+    "webkit",
+    "node-webkit"
   ],
   "author": "Dickson Tam <dicksont650@gmail.com>",
   "license": "MIT",

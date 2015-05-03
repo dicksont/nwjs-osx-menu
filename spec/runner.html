@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-1.18.0.css">
 <script>
   require('./index.js')(window);
 </script>
+
 </head>
 <body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script>
 
+  var assert = QUnit.assert;
+  var gui = require('nw.gui');
+  var menu = gui.Window.get().menu.items;
+
+  if (process.platform == 'darwin') {
+    QUnit.test('OSX Menu', function() {
+      assert.equal(menu.length, 3, "Menubar contains three menus");
+      assert.equal(menu[1].label, "Edit", "Menubar has Edit menu");
+      assert.equal(menu[2].label, "Window", "Menubar has Window menu");
+    });
+  } else {
+    QUnit.test('non-OSX Menu', function() {
+      assert.equal(menu.length, 1, "Menubar contains only one menu");
+    });
+  }
+
+
+  </script>
 </body>
 </html>

@@ -1,7 +1,14 @@
 # nwjs-osx-menu
-Creates a default menu for a nw.js app on Mac OS X, thereby enabling functionality like Copy-and-Paste.
+Creates a default menu for your nw.js program on Mac OS X, thereby enabling functionality like Copy-and-Paste.
 
-###Usage
+## Background
+Lack of **⌘C**(copy) and **⌘V**(paste) was making development difficult on nw.js. Originally, I had saved the code as a gist/snippet. But even this required copy and paste. I was getting tired of typing in this boilerplate every time, I ran my app. So I tried to find a better solution.
+
+I checked to see if anyone has created module to address this problem. It appeared that no one had. I also checked, to see if code for this would make more sense in nw.js itself. It did not. It also probably will not.
+
+So I went ahead and put together this solution on a Saturday. Enjoy!
+
+##Usage
 
 Simply install nwjs-osx-menu with:
 
@@ -14,28 +21,5 @@ Call the module function passing in the window object:
 ```javascript
 require('nwjs-osx-menu')(window);
 ```
+
 On Mac OS X, this call should add an Edit and a Window menu to the application menubar. On other platforms, this call should not modify the application state.
-
-
-##License
-The MIT License (MIT)
-
-Copyright (c) 2015 Dickson Tam
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

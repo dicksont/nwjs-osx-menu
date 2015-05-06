@@ -13,7 +13,7 @@ So I went ahead and put together this solution on a Saturday. Enjoy!
 
 ##Usage
 
-This is available as a [nmp module](https://www.npmjs.com/package/nwjs-osx-menu). Simply install with:
+This is available as a [npm module](https://www.npmjs.com/package/nwjs-osx-menu). Simply install with:
 
 ```Shell
 npm install nwjs-osx-menu

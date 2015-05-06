@@ -1,4 +1,7 @@
 # nwjs-osx-menu
+[![npm version](https://badge.fury.io/js/nwjs-osx-menu.svg)](http://badge.fury.io/js/nwjs-osx-menu)
+[![Bower version](https://badge.fury.io/bo/nwjs-osx-menu.svg)](http://badge.fury.io/bo/nwjs-osx-menu)
+
 Creates a default menu for your nw.js program on Mac OS X, thereby enabling functionality like Copy-and-Paste.
 
 ## Background
@@ -10,7 +13,7 @@ So I went ahead and put together this solution on a Saturday. Enjoy!
 
 ##Usage
 
-Simply install nwjs-osx-menu with:
+This is available as a [nmp module](https://www.npmjs.com/package/nwjs-osx-menu). Simply install with:
 
 ```Shell
 npm install nwjs-osx-menu
